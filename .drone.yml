@@ -1,7 +1,11 @@
 ---
 kind: pipeline
-type: docker
+type: exec
 name: default
+
+platform:
+  os: darwin
+  arch: amd64
 
 steps:
 - name: build

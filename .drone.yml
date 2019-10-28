@@ -11,5 +11,5 @@ steps:
 - name: build
   # image: golang
   commands:
-  - go build
-  - go test
+  - echo "Building ..."
+  - go build -o release/dronedemo cmd/dronedemo/*.go

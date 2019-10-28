@@ -8,6 +8,10 @@ platform:
   arch: amd64
 
 steps:
+- name: test
+  image: node:10.17-alpine
+  commands:
+  - npm i
 - name: build
   image: golang:1.13-alpine
   commands:

@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: exec
+type: docker
 name: default
 
 platform:
@@ -9,7 +9,8 @@ platform:
 
 steps:
 - name: build
-  # image: golang
+  image: golang
   commands:
-  - echo "Building ..."
-  - go build -o release/dronedemo cmd/dronedemo/*.go
+  - go build
+  # - echo "Building ..."
+  # - go build -o release/dronedemo cmd/dronedemo/*.go
